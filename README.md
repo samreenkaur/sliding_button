@@ -2,6 +2,7 @@
 
 A customizable, animated slide-to-act button for Flutter. Slide to trigger an action, and reset to use again — just like swipe-to-unlock or slide-to-submit UIs.
 
+https://github.com/user-attachments/assets/0d2b7ed2-97c2-42f7-870d-9e227670a188
 
 ---
 
