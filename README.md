@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    final GlobalKey<SlideActionButtonState> _sliderKey = GlobalKey();
+    final GlobalKey<SlidingButtonState> _sliderKey = GlobalKey();
 
     return MaterialApp(
       home: Scaffold(
@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SlideActionButton(
+              SlidingButton(
                 key: _sliderKey,
                 onSlideComplete: () {
                   print('✅ Action Completed!');
@@ -94,7 +94,7 @@ borderRadius	    double?	            Border radius for rounded corners
 If autoReset is false, you can reset the slider manually using a GlobalKey.
 
 ```
-final GlobalKey<SlideActionButtonState> _sliderKey = GlobalKey();
+final GlobalKey<SlidingButtonState> _sliderKey = GlobalKey();
 
 _sliderKey.currentState?.reset();
 
